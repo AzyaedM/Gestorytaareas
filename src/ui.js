@@ -1,13 +1,13 @@
-import { getTask } from "./task";
+import { getTasks } from "./task";
 
 //Funcion para mostrarle al usuario las tareas//
 export const renderTask = (  ) => {
-    const Tasklist = document.getElementById ("task-list");
+    const Tasklist = document.getElementById("task-list");
     Tasklist.innerHTML = ""; 
-    const task = getTask ( );
-    task.forEach ((task) => {
-        const li = document.createElement ("li");
-        li.setAttribute("dataid",task.id);
+    const tasks = getTasks( );
+    tasks.forEach((task) => {
+        const li = document.createElement("li");
+        li.setAttribute("data-id",task.id);
 
     //Solo añadir si la tarea está completada//
     if(task.completed === true) {
@@ -19,7 +19,7 @@ export const renderTask = (  ) => {
     <button class="toggle"> ${task.completed === true ? "Deshacer" : "Completar"} </button>
     `;
 
-    taskList.appendChild(li);
+    Tasklist.appendChild(li);
     }); 
    
 };

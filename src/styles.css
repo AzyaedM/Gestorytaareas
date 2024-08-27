@@ -1,21 +1,21 @@
 /*Estilos generales*/
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #f5a1cb;
     margin: 0;
     padding: 0;
     height: 100vh;
     display:flex;
-    justify-content: center;
+    justify-content:center;
     align-items: center;
 }
 
 /*Estilos contenedor principal*/
 #app {
-    background-color: white;
+    background-color: rgb(97, 197, 94);
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba (0, 0, 0, 0);
+    box-sizing: 0 0 10px rgba (0, 0, 0, 0);
 }
 
 /*Estilos al formulario*/
@@ -29,14 +29,14 @@ input {
     width: 75%;
     padding: 8px;
     margin-right: 10px;
-    border-radius: 1px, solid #ddd;
+    border-radius: 1px, solid #62ce42;
     border-radius: 3px;
 }
 /*Estilos para el boton*/
     button {
         padding: 5px 8px;
-        background-color: #007bff;
-        color: white;
+        background-color: #f0eaed;
+        color:rgb(252, 12, 152);
         border: none;
         border-radius: 3px;
         cursor: pointer;
@@ -52,7 +52,7 @@ ul {
 li { 
     background-color: #f4f4f4;
     padding: 10px;
-    border: 1px solid #ddd;
+    border: 1px solid #e76dbf;
     margin-top: 10px;
     display: flex;
     align-items: center;
@@ -61,5 +61,5 @@ li {
 /*Estilos para cuando una tarea esta completa*/
 li.completed {
     text-decoration: line-through;
-    color: #888;
+    color: #d82c74;
 }
